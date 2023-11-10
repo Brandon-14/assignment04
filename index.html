@@ -27,10 +27,11 @@ grid-column-end: 4;
 grid-row-start: 2;
 grid-row-end: 3;
 grid-column-start: 1;
-grid-column-end: 4;    
+grid-column-end: 4; 
+text-align: center;   
 }
 
-.userpicture {
+.humanpicture {
 grid-row-start: 3;
 grid-row-end: 4;
 grid-column-start: 1;
@@ -76,43 +77,43 @@ var c;
 
 
 function rock() {
-document.getElementById("userimage").src = "rock.png";
+document.getElementById("humanpicture").src = "rock.png";
 
 a = (Math.floor(Math.random() * 3)+1);
 
 if (a == 1)  
     {document.getElementById("computerimage").src = "rock.png";
-    document.getElementById("messagecenter").innerHTMl = "Tie!"; }
+    document.getElementById("messagecenter").innerHTMl = "Looks like we both won there!"; }
 
     if(a == 2) 
 {document.getElementById("computerimage").src = "paper.png";
-document.getElementById("messagecenter").innerHTML = "You Lose!";}
+document.getElementById("messagecenter").innerHTML = "Yikes you lose but its ok lets go again!";}
 
 
 if (a == 3) 
  {document.getElementById("computerimage").src = "scissor.png";
- document.getElementById("messagecenter").innerHTML = "You Win!";}
+ document.getElementById("messagecenter").innerHTML = "You Won that one but lets try again!";}
 
 
 }
 
 
 function paper() {
-document.getElementById("userimage").src = "paper.png";
+document.getElementById("humanpicture").src = "paper.png";
 
 a = (Math.floor(Math.random() *  3)+1);
 
 if (a == 1) 
     {document.getElementById("computerimage").src = "rock.png";
-    document.getElementById("messagecenter").innerHTML = "You win!"; }
+    document.getElementById("messagecenter").innerHTML = "You Won that one but lets try again!"; }
 
     if(a == 2) 
 {document.getElementById("computerimage").src = "paper.png";
-document.getElementById("messagecenter").innerHTML = "Tie!";}
+document.getElementById("messagecenter").innerHTML = "Looks like we both won there!";}
 
 if (a == 3) 
  {document.getElementById("computerimage").src = "scissor.png";
- document.getElementById("messagecenter").innerHTML = "You Lose!";}
+ document.getElementById("messagecenter").innerHTML = "Yikes you lose but its ok lets go again!";}
 
 
 
@@ -123,21 +124,21 @@ if (a == 3)
 
 
 function scissor() {
-document.getElementById("userimage").src = "scissor.png";
+document.getElementById("humanpicture").src = "scissor.png";
 
 a = (Math.floor(Math.random() * 3));
 
 if (a == 1) 
     {document.getElementById("computerimage").src = "rock.png";
-    document.getElementById("messagecenter").innerHTML = "You Lose!";}
+    document.getElementById("messagecenter").innerHTML = "Yikes you lose but its ok lets go again!";}
  
     if(a == 2) 
 {document.getElementById("computerimage").src = "paper.png";
-document.getElementById("messagecenter").innerHTML = "You Win!";}
+document.getElementById("messagecenter").innerHTML = "You Won that one but lets try again!";}
 
 if (a == 3) 
  {document.getElementById("computerimage").src = "scissor.png";
- document.getElementById("messgaecenter").innerHTML = "Tie!";}
+ document.getElementById("messgaecenter").innerHTML = "Looks like we both won there!";}
 
 
 
@@ -190,18 +191,20 @@ if (a == 3)
 
 
 
-    <div class = "title">  Rock Paper Scissors!!  </div>
+    <div class = "title"> <h1> Rock, Paper, Scissors!!! </h1>  </div>
 
 
 
 
+    
+    <div class = "controlcenter"> Hi! I'm computer and here you will be versing me in a game called "Rock, Paper, Scissor." </div>
+    
 
-<div class = "controlcenter"> Click rock, paper, or scissors and v.s the computer! </div>
 
 
 
-<div class = "userpicture"> 
-<img src="https://img.freepik.com/premium-photo/asian-teenager-animation_183364-11907.jpg" id = "userimage">
+<div class = "humanpicture"> 
+<img src="humanpicture.webp" id = "humanpicture">
 
 
 
@@ -211,7 +214,7 @@ if (a == 3)
 
 
 <div class = "computerpicture"> 
-<img src = "laptop-animation-cartoon-clip-art-cartoon-computer.jpg" id = "computerimage">
+<img src = "computerpicture.jpg" id = "computerimage">
 
 </div>
 
